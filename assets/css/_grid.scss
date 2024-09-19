@@ -1,0 +1,92 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; // pra visualizar melhor
+  margin: 20px; // pra visualizar melhor
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+
+  .col-1 {
+    grid-column: span 1;
+    @media (max-width: 768px) {
+      grid-column: span 6;
+    }
+  }
+  .col-2 {
+    grid-column: span 2;
+    @media (max-width: 768px) {
+      grid-column: span 6;
+    }
+  }
+  .col-3 {
+    grid-column: span 3;
+    @media (max-width: 768px) {
+      grid-column: span 12; // o certo é 12
+    }
+  }
+  .col-4 {
+    grid-column: span 4;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-5 {
+    grid-column: span 5;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-6 {
+    grid-column: span 6;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-7 {
+    grid-column: span 7;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-8 {
+    grid-column: span 8;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-9 {
+    grid-column: span 9;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-10 {
+    grid-column: span 10;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-11 {
+    grid-column: span 11;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  .col-12 {
+    grid-column: span 12;
+    @media (max-width: 768px) {
+      grid-column: span 12; // COPIOU ERRADO, NEM SEMPRE
+    }
+  }
+  /* fazer até o 12*/
+}
+
+div {
+  background-color: lightblue;
+  // quem estiver com o fundo vervemlho é pq copiou meu código
+}
